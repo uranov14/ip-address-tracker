@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
   <title>Frontend Mentor | IP Address Tracker</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,20 +18,52 @@
   </style>
 </head>
 <body>
+  <header>
+    <div class= "heading">
+      <h1>IP Address Tracker</h1>
+    </div>
+    <div class= "search-box">
+      <div class="search-wrapper">
+        <input type="text" class="search" id = "search" placeholder="Search for any IP address or domain">
+        <button class="submit" id="submit" onclick=" mapload(); "><img src="images/icon-arrow.svg"></button>
+      </div>
+    </div>
+  </header>
 
-  IP Address Tracker
+  <div class="stats-display">
+    <div class="stats-wrapper">
+      <div class="ip-display" style="border: none;">
+        <p>IP ADDRESS</p>
+        <h2 id="ip-stats">192.212.174.101</h2>
+      </div>
+      <div class = "location-display">
+        <p>LOCATION</p>
+        <h2 id="location-stats" >Brooklyn, NY 10001</h2>
+      </div>
+      <div class="timezone-display">
+        <p>TIMEZONE</p>
+        <h2 id="timezone-stats" >UTC -05:00</h2>
+      </div>
+      <div class="isp-display">
+        <p>ISP</p>
+        <h2 id="isp-stats">Spacex Starlink</h2>
+      </div>
+    </div>
+  </div>
 
-  Search for any IP address or domain
+  <div class = "lower-body" id = "mapid"></div>
 
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Uranov</a>.
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
