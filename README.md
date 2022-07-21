@@ -8,7 +8,7 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/uranov14/ip-address-tracker.git]
 - Live Site URL: [https://uranov14.github.io/ip-address-tracker/]
 
 ## My process
