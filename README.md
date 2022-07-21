@@ -8,10 +8,8 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [https://github.com/uranov14/ip-address-tracker.git]
-- Live Site URL: [https://uranov14.github.io/ip-address-tracker/]
-
-## My process
+- Solution URL: [Solution](https://github.com/uranov14/ip-address-tracker.git)
+- Live Site URL: [Live Site](https://uranov14.github.io/ip-address-tracker/)
 
 ### Built with
 
@@ -26,5 +24,4 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [uranov](https://www.frontendmentor.io/profile/uranov14)
